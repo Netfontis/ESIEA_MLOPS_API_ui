@@ -18,7 +18,7 @@ st.set_page_config(
 )
 
 # Priorité : secrets → env → défaut local
-apiUrl = st.secrets.get("API_URL", os.getenv("API_URL", "http://localhost:8000"))
+apiUrl = st.secrets.get("API_URL", os.getenv("API_URL", "https://streamlitfastapi-hm4o.onrender.com"))
 
 predictTimeout = 30
 explainTimeout = 60
